@@ -1,19 +1,31 @@
 <html>
     <head>
-
+            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+            <style>
+                @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+            </style>
+            <meta charset="utf-8">
+            <link rel="stylesheet" href="css/bootstrap.min.css" />
+            <link rel="stylesheet" href="css/index.css" />
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+                crossorigin="anonymous">
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+                crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
     </head>
     <body>
             <div class="roulette" style="display:none;"> 
-                    <img src="http://example.com/star.png"/>
-                    <img src="http://example.com/flower.png"/>
-                    <img src="http://example.com/coin.png"/>
-                    <img src="http://example.com/mshroom.png"/>
-                    <img src="http://example.com/chomp.png"/>
+                    <img src="./img/MD1.jpg"/>
+                    <img src="./img/MD2.jpg"/>
+                    <img src="./img/MD3.jpg"/>
                 </div> 
   
                 
 
-                
+
         <script>
             var option = {
                 speed : 10,
@@ -29,7 +41,7 @@
                     console.log('stop');
                 }
             }
-            $('div.roulette').roulette(option);	
+            document.getElementById("roulette").rulette=option;	
         </script>                
     </body>
 </html>
