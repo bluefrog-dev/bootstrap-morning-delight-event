@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 body{
     font-family: 'Open Sans', sans-serif;
+    margin-right:0;
+    margin-left:0;
 }
 #nav_bar{
+    width:105%;
+    background-color:black;
     z-index: 3;
-    position: relative;
-    color:white;
-    font-size:1.3rem;
-    padding:0.5rem 0.5rem 0 0.5rem;
-    background-color:#081e38;
+    position: fixed;
+    opacity:0.6;
+    font-size:1rem;
 }
 #nav_bar a{
     color:white;
+    border:1px solid white;
+    margin:1rem 0rem;
 }
 #MD_carousel{
     position: relative;
-    width:auto;
-    height:14rem !important;
+    width:100%;
+    height:16rem !important;
     z-index: 1;
 }
 #MD_carousel img{
-    width:auto;
+    width:100%;
     height:18rem;
 }
 #MD_carousel .carousel-control-prev-icon,
@@ -29,13 +33,13 @@ body{
 }
 .carousel-control-prev,
 .carousel-control-next{
-  width:4rem;
+  width:3rem;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3rem;
   background-size: 1.5rem;
   background-color:black;
   border-radius: 50%;
@@ -63,7 +67,10 @@ body{
     color:white;
 }
 .MD_c img{
-    margin:7px 10px 10px 4px;
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+    width:4rem;
+    height:4rem;
 }
 #MD_t{
     font-size:0.8rem; 
@@ -76,19 +83,24 @@ body{
 #MD_i{
     border-radius: 5%;
 }
-#MD_c2{
-    margin-top:2.2rem;
-    padding:1rem;
+#MD_c2{ 
+    
+    padding-top:3rem;
+    color:white;
     background-color:#081e38;
-    border-radius: 5%;
     font-weight: bold;
+    border:0.5px solid white;
+}
+#MD_c2 a{
+    color:rgb(255, 116, 2);
+    text-align: center;
 }
 #MD_t1 img{
     border-radius:5%;
     border:1px solid #cecece;
 }
 #MD_Song{
-    font-size: 1.2rem;
+    font-size:1rem;
 }
 #Naver_map{
     width:20rem;
@@ -96,6 +108,5 @@ body{
     vertical-align:top;
 }
 #MD_J{
-    font-weight:bold;
-    font-size:1.2rem;
+    font-size:1.1rem;
 }
