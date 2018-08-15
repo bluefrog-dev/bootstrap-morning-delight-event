@@ -88,11 +88,14 @@ body{
     border:1px solid #cecece;
 }
 #MD_Song{
-    margin:1.5rem;
     font-size: 1.2rem;
 }
 #Naver_map{
     width:20rem;
     height:20rem; 
     vertical-align:top;
+}
+#MD_J{
+    font-weight:bold;
+    font-size:1.2rem;
 }

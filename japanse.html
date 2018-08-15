@@ -2,9 +2,15 @@
 <html>
 
 <head>
-     <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+    </style>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/subindex.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -19,21 +25,23 @@
 
 <body>
     <div>
-        <div class="row justify-content-around" id="nav_bar">
-            <div class="col-xs-2">
+
+        <div id="nav_bar">
+            <center>
                 <a href="./index.html">한국어</a>
-            </div>
-            <div class="col-xs-2">
-                <a href="./index1.html">English</a>
-            </div>
-            <div class="col-xs-2">
-                <a href="./index2.html">中國語</a>
-            </div>
-            <div class="col-xs-2">
-                <a href="#" style="font-weight: bold">日本語</a>
-            </div>
+                <a href="#">English</a>
+                <a href="#">中國語</a>
+                <a href="#"  style="font-weight: bold">日本語</a>
+            </center>
         </div>
-        
+
+        <div class="card" id="MD_c2">
+                <h2>
+                    <center>100%当りイベント!</center>
+                </h2>
+                <a href="./Roulette.html"> ルーレットを回せ!</br>(ルーレットを回しに行いこう!)</a>
+            </div>
+
         <div id="MD_carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -53,6 +61,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
         </div>
+        
 
         <div id="MD_radius">
             <div>
@@ -62,25 +71,26 @@
                 <div class="container">
                     _________
                     <br/>
-                    <h2 style="font-weight: bold ;margin-top:2rem;">モーニングディライト</h2>
-                    <span id="MD_Song">松島トリプルストリート店</span>
-                    <div class="MD_c">
-                        <a href="https://m.store.naver.com/restaurants/detail?id=669743525">
+                    <div class="row justify-content-around ">
+                        <div class="MD_c col-xs">
+                            <a href="https://m.store.naver.com/restaurants/detail?id=669743525">
                             <img src="./img/1.png" />
                         </a>
-                        <a href="https://www.instagram.com/md_in_songdo/">
-                            <img src="./img/white.png" />
-                        </a>
+                    </div>
+                        <div class="col-xs">  
+                            <p id="MD_J">モーニングディライト<br></p>
+                            <span id="MD_Song">松島トリプルストリート点</span>
+                        </div>
+                        <div class="MD_c col-xs">
+                                <a href="https://www.instagram.com/md_in_songdo/">
+                                    <img src="./img/white.png" />
+                                </a>
+                        </div>
                     </div>
                 </div>
             </center>
         </div>
         <div id="MD_accordion">
-            <center>
-                <a href="#coupon">
-                    <span style="color:white; font-size: 2rem;">割引のチャンス</span>
-                </a>
-            </center>
             <div class="container" id="cl_bg">
                 <center>
                     <h4>情報
@@ -90,14 +100,14 @@
                     <br/>
                 </center>
                 <center>
-                    <span style="font-weight: bold; font-size:1.5rem; padding:1rem 1rem;">モーニングディライト</span>
+                    <span style="font-weight: bold; font-size:1.5rem; padding:1rem 1rem;">모닝 딜라이트</span>
                     <table id="MD_t">
                         <tr>
                             <td>
-                                営業時間
+                                    営業時間
                             </td>
                             <td>
-                                朝10時~朝2時
+                                    朝10時~朝2時
                             </td>
                         </tr>
                         <tr>
@@ -113,15 +123,15 @@
                                 アドレス
                             </td>
                             <td>
-                                33-4, Songdogwahak-ro 16beon-gil,<br> Yeonsu-gu, Incheon D棟
+                                    33-4, Songdogwahak-ro 16beon-gil<br>, Yeonsu-gu, Incheon
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                特異点
+                                    特異点
                             </td>
                             <td>
-                                Wi-Fi,テラス,駐車場,喫煙室設置
+                                Wi-Fi,テラス,駐車場,喫煙室お揃い
                             </td>
                         </tr>
                     </table>
@@ -145,15 +155,6 @@
 
                 </center>
 
-
-                <a name=coupon>
-                    <div class="card" id="MD_c2">
-                        <h2>
-                            <center>20%割引イベント!</center>
-                        </h2>
-                        <a class="btn" href="https://www.instagram.com/md_in_songdo/">インスタグラムでモーニングディライトいいねをタッチ!</br>(タッチするとインスタに移動します)</a>
-                    </div>
-                </a>
             </div>
         </div>
 

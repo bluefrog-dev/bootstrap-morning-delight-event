@@ -2,13 +2,15 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Open+Sans');
     </style>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/subindex.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -17,26 +19,29 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
 </head>
 
 
 <body>
     <div>
-        <div class="row justify-content-around" id="nav_bar">
-            <div class="col-xs-2">
+
+        <div id="nav_bar">
+            <center>
                 <a href="#" style="font-weight: bold">한국어</a>
-            </div>
-            <div class="col-xs-2">
                 <a href="#">English</a>
-            </div>
-            <div class="col-xs-2">
                 <a href="#">中國語</a>
-            </div>
-            <div class="col-xs-2">
                 <a href="./japanse.html">日本語</a>
-            </div>
+            </center>
         </div>
-        
+
+        <div class="card" id="MD_c2">
+                <h2>
+                    <center>100% 당첨 이벤트!</center>
+                </h2>
+                <a href="./Roulette.html">룰렛돌리기!</br>(룰렛 돌리러 gogo!)</a>
+            </div>
+
         <div id="MD_carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -56,6 +61,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
             </a>
         </div>
+        
 
         <div id="MD_radius">
             <div>
@@ -65,25 +71,26 @@
                 <div class="container">
                     _________
                     <br/>
-                    <h2 style="font-weight: bold ;margin-top:2rem;">모닝 딜라이트</h2>
-                    <span id="MD_Song">송도 트리플 스트리트점</span>
-                    <div class="MD_c">
-                        <a href="https://m.store.naver.com/restaurants/detail?id=669743525">
+                    <div class="row justify-content-around">
+                        <div class="MD_c">
+                            <a href="https://m.store.naver.com/restaurants/detail?id=669743525">
                             <img src="./img/1.png" />
                         </a>
-                        <a href="https://www.instagram.com/md_in_songdo/">
-                            <img src="./img/white.png" />
-                        </a>
+                    </div>
+                        <div>  
+                            <h2 style="font-weight:bold ;">모닝 딜라이트</h2>
+                            <span id="MD_Song">송도 트리플 스트리트점</span>
+                        </div>
+                        <div class="MD_c">
+                                <a href="https://www.instagram.com/md_in_songdo/">
+                                    <img src="./img/white.png" />
+                                </a>
+                        </div>
                     </div>
                 </div>
             </center>
         </div>
         <div id="MD_accordion">
-            <center>
-                <a href="#coupon">
-                    <span style="color:white; font-size: 2rem;">20%할인의 기회!</span>
-                </a>
-            </center>
             <div class="container" id="cl_bg">
                 <center>
                     <h4>정보
@@ -148,15 +155,6 @@
 
                 </center>
 
-
-                <a name=coupon>
-                    <div class="card" id="MD_c2">
-                        <h2>
-                            <center>20% 할인 이벤트!</center>
-                        </h2>
-                        <a class="btn" href="https://www.instagram.com/md_in_songdo/">인스타에서 모닝딜라이트 좋아요 누르기!</br>(누르면 인스타로 넘어갑니다)</a>
-                    </div>
-                </a>
             </div>
         </div>
 

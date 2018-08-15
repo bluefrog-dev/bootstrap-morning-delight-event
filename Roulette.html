@@ -1,47 +1,86 @@
 <html>
-    <head>
-            <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-            <style>
-                @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-            </style>
-            <meta charset="utf-8">
-            <link rel="stylesheet" href="css/bootstrap.min.css" />
-            <link rel="stylesheet" href="css/index.css" />
-            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-                crossorigin="anonymous">
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                crossorigin="anonymous"></script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-    </head>
-    <body>
-            <div class="roulette" style="display:none;"> 
-                    <img src="./img/MD1.jpg"/>
-                    <img src="./img/MD2.jpg"/>
-                    <img src="./img/MD3.jpg"/>
-                </div> 
-  
-                
 
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/roulette.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
 
-        <script>
-            var option = {
-                speed : 10,
-                duration : 3,
-                stopImageNumber : 0,
-                startCallback : function() {
-                    console.log('start');
-                },
-                slowDownCallback : function() {
-                    console.log('slowDown');
-                },
-                stopCallback : function($stopElm) {
-                    console.log('stop');
-                }
-            }
-            document.getElementById("roulette").rulette=option;	
-        </script>                
-    </body>
-</html>
+<body>
+    <div class="wrapper">
+        <button class="button">Spin</button>
+        <div class="items"></div>
+    </div>
+    <div>
+        <pre>   
+            0: "문화상품권 1만원권",
+            1: "문화상품권 5천원권",
+            2: "꽈배기",
+            3: "찹스테이크",
+            4: "몬스터 헌터 월드",
+            5: "귀찮아",
+            6: "안귀찮아",
+            7: "이학성",
+            8: "김승우",
+            9: "페르소나",
+            10: "set",
+            11: "필름",
+            12: "쿠폰",
+            13: "이것저것",
+            14: "다드려요"</pre>
+    </div>
+
+    <script>
+        var button = $('.button');
+        var items = $('.items');
+        var coin_width = 75;
+        var numbers = {
+            0: 525,
+            1: 0,
+            2: 150,
+            3: 300,
+            4: 450,
+            5: 675,
+            6: 825,
+            7: 975,
+            8: 1050,
+            9: 900,
+            10: 750,
+            11: 600,
+            12: 375,
+            13: 225,
+            14: 75
+        };
+
+        button.click(function () {
+            var number = Math.floor(Math.random() * 14);
+            var cycles = Math.floor(getRandomArbitrary(2, 3));
+            var dev = getRandomArbitrary(0, 72);
+            var scroll_amount = ((825 + numbers[number]) + dev) + (1125 * cycles);
+            items.removeClass("spin_animation");
+            items.css({ "background-position-x": "-262.5px" });
+            setTimeout(function () {
+                items.addClass("spin_animation");
+                items.css({ "background-position-x": "-" + scroll_amount + "px" });
+                console.log("W: " + number + " SA: " + scroll_amount + " D: " + dev + " C: " + cycles);
+            }, 10);
+        });
+
+        function getRandomArbitrary(min, max) {
+            return Math.random() * (max - min) + min;
+        }
+    </script>
+</body>

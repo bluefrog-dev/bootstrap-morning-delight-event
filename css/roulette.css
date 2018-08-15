@@ -1,0 +1,36 @@
+.wrapper {
+    overflow: hidden;
+    width: 600px;
+  }
+  
+  .items {
+    background-size: 1125px 75px;
+    background-image: url("https://csgoatse.com/assets/www/img/old/roulette.png");
+      height: 75px;
+      width: 100%;
+      position: relative;
+      background-position-x: -262.5px;
+  }
+  
+  .items:before {
+      content: "";
+      position: absolute;
+      background: #ffd02d;
+      height: 100%;
+      width: 3px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+  }
+  
+  .spin_animation {
+      -webkit-transition: all 6000ms cubic-bezier(0.34, 0.87, 0.52, 1); 
+     -moz-transition: all 6000ms cubic-bezier(0.34, 0.87, 0.52, 1); 
+       -o-transition: all 6000ms cubic-bezier(0.34, 0.87, 0.52, 1); 
+          transition: all 6000ms cubic-bezier(0.34, 0.87, 0.52, 1); /* custom */
+  
+  -webkit-transition-timing-function: cubic-bezier(0.34, 0.87, 0.52, 1); 
+     -moz-transition-timing-function: cubic-bezier(0.34, 0.87, 0.52, 1); 
+       -o-transition-timing-function: cubic-bezier(0.34, 0.87, 0.52, 1); 
+          transition-timing-function: cubic-bezier(0.34, 0.87, 0.52, 1); /* custom */
+  }
