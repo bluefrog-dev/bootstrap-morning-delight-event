@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#nav_bar{
+    width: 100%;
+    background-color:black;
+    z-index: 3;
+    position: fixed;
+    font-weight: bold;
+    opacity:0.6;
+    font-size:1rem;
+    padding:0.5rem 0 0.5rem 0;
+}
+#nav_bar a{
+    color:white;
+    border:1px solid white;
+    margin:1rem;
+}
+#MD_carousel{
+    position: relative;
+    width:100%;
+    height:16rem !important;
+    z-index: 1;
+}
+#MD_carousel img{
+    width:100%;
+    height:18rem;
+}
+#MD_carousel .carousel-control-prev-icon,
+#MD_carousel .carousel-control-next-icon{
+  position: relative;
+}
+.carousel-control-prev,
+.carousel-control-next{
+  width:3rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 3rem;
+  width: 3rem;
+  background-size: 1.5rem;
+  background-color:black;
+  border-radius: 50%;
+  box-shadow:5px 5px 40px -16px black;
+}
+#MD_radius{
+    z-index: 1; 
+    position: relative; 
+    background-color:#081e38;
+    color:white;
+}
+#MD_radius .MD_I{
+    max-width:95%;
+    height:auto;
+    margin-top:3rem;
+}
+#MD_accordion{
+    padding:2rem 0rem;
+    background-color: #0e2d51;
+    color:white;
+}
+#cl_bg{
+    padding-top:2rem;
+    background-color: #0e2d51;
+    color:white;
+}
+.MD_c img{
+    margin-top:0.5rem;
+    margin-bottom:0.5rem;
+    width:4rem;
+    height:4rem;
+}
+#MD_t{
+    font-size:0.8rem; 
+    color:white;
+    margin:1.5rem 0rem;
+}
+#MD_t td{
+    padding:0.8rem 1rem 0.6rem 1rem;
+}
+#MD_i{
+    border-radius: 5%;
+}
+#MD_c2{ 
+    
+    padding-top:3rem;
+    color:white;
+    background-color:#081e38;
+    font-weight: bold;
+    border:0.5px solid white;
+}
+#MD_c2 a{
+    color:rgb(255, 116, 2);
+    text-align: center;
+}
+#MD_t1 img{
+    border-radius:5%;
+    border:1px solid #cecece;
+}
+#MD_Song{
+    font-size: 1.2rem;
+}
+#Naver_map{
+    width:20rem;
+    height:20rem; 
+    vertical-align:top;
+}
